@@ -4,6 +4,7 @@ import Main from './views/main';
 import Example from './views/example';
 import BufferGeometry from './views/examples/bufferGeometry';
 import BufferGeometryWave from './views/examples/bufferGeometry.wave';
+import Shader from './views/examples/shader';
 
 Vue.use(Router);
 
@@ -30,6 +31,11 @@ export default new Router({
       path: '/wave',
       name: 'wave',
       component: BufferGeometryWave,
+    },
+    {
+      path: '/shader',
+      name: 'shader',
+      component: Shader,
     },
   ],
 });
